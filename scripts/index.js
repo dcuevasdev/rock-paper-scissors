@@ -7,8 +7,7 @@ if (
   (options[optionHouse] == "Paper" && options[optionPlayer] == "Scissors") ||
   (options[optionHouse] == "Scissors" && options[optionPlayer] == "Rock")
 ) {
-  console.log("player");
-  document.write(
+  console.log(
     `Player: ${options[optionPlayer]} VS House: ${options[optionHouse]} <br/> Win Player`
   );
 } else if (
@@ -16,12 +15,11 @@ if (
   (options[optionHouse] == "Scissors" && options[optionPlayer] == "Paper") ||
   (options[optionHouse] == "Rock" && options[optionPlayer] == "Scissors")
 ) {
-  console.log("House");
-  document.write(
+  console.log(
     `Player: ${options[optionPlayer]} VS House: ${options[optionHouse]} <br/> Win House`
   );
 } else {
-  document.write(
+  console.log(
     `Player: ${options[optionPlayer]} VS House: ${options[optionHouse]} <br/> It's a tie`
   );
 }
