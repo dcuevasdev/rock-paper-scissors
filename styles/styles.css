@@ -166,9 +166,17 @@ body {
   Footer
 ==================*/
 .attribution {
-  font-size: 11px;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
   text-align: center;
+  color: var(--background-elements);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--scissors-gradient-to);
+  text-decoration: none;
+}
+.attribution a:hover {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  transition: all 500ms;
 }
