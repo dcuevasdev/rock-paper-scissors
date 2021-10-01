@@ -34,6 +34,10 @@ html {
 }
 
 body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
   margin: 0;
   font-family: var(--font);
   background: radial-gradient(
@@ -46,8 +50,8 @@ body {
 .container {
   display: grid;
   place-items: center;
-  width: 100%;
-  height: 100vh;
+  width: 124rem;
+  height: 63rem;
 }
 /*==================
   Header
