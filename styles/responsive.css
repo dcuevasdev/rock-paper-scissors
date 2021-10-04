@@ -1,0 +1,37 @@
+/*==================
+  General Styles
+==================*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+/*==================
+  Rules
+==================*/
+.rules {
+  margin: 2.2rem 0 0.5rem;
+}
+
+@media (max-width: 600px) {
+  /*==================
+  Header
+==================*/
+  .information {
+    width: 90%;
+  }
+
+  /*==================
+  Main Play
+==================*/
+  .play {
+    width: 90%;
+  }
+  .play__button {
+    width: 14.6rem;
+    height: 14.6rem;
+    border-width: 1.3rem;
+  }
+  .play__rock {
+    left: calc(50% - 73px);
+  }
+}
