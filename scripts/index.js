@@ -5,9 +5,27 @@ const randomHouse = () => {
   return Math.floor(Math.random() * options.length);
 };
 
+function onclickPaper() {
+  const valuePaper = document.getElementById("buttonPaper");
+  optionPlayer = valuePaper.value;
+
+  const optionHouse = randomHouse();
+
+  game(optionHouse, optionPlayer);
+}
+
 function onclickScissors() {
   const valueScissors = document.getElementById("buttonScissors");
   optionPlayer = valueScissors.value;
+
+  const optionHouse = randomHouse();
+
+  game(optionHouse, optionPlayer);
+}
+
+function onclickRock() {
+  const valueRock = document.getElementById("buttonRock");
+  optionPlayer = valueRock.value;
 
   const optionHouse = randomHouse();
 
@@ -20,20 +38,17 @@ function game(optionHouse, optionPlayer) {
     (options[optionHouse] == "Paper" && optionPlayer == "Scissors") ||
     (options[optionHouse] == "Scissors" && optionPlayer == "Rock")
   ) {
-    document.write(
-      `Player: ${optionPlayer} VS House: ${options[optionHouse]} <strong> Win Player </strong> `
-    );
+    const result__game = document.getElementById("result__text");
+    result__game.innerText = `Player: ${optionPlayer} VS House: ${options[optionHouse]}  Win Player `;
   } else if (
     (options[optionHouse] == "Paper" && optionPlayer == "Rock") ||
     (options[optionHouse] == "Scissors" && optionPlayer == "Paper") ||
     (options[optionHouse] == "Rock" && optionPlayer == "Scissors")
   ) {
-    document.write(
-      `Player: ${optionPlayer} VS House: ${options[optionHouse]} Win House`
-    );
+    const result__game = document.getElementById("result__text");
+    result__game.innerText = `Player: ${optionPlayer} VS House: ${options[optionHouse]} Win House`;
   } else {
-    document.write(
-      `Player: ${optionPlayer} VS House: ${options[optionHouse]} It's a tie`
-    );
+    const result__game = document.getElementById("result__text");
+    result__game.innerText = `Player: ${optionPlayer} VS House: ${options[optionHouse]} It's a tie`;
   }
 }

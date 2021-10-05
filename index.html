@@ -29,7 +29,13 @@
         </div>
       </header>
       <main class="play">
-        <button type="button" class="play__paper play__button" value="Paper">
+        <button
+          type="button"
+          id="buttonPaper"
+          class="play__paper play__button"
+          value="Paper"
+          onclick="onclickPaper()"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" width="49" height="59">
             <path
               fill="#3B4262"
@@ -51,7 +57,13 @@
             />
           </svg>
         </button>
-        <button type="button" class="play__rock play__button" value="Rock">
+        <button
+          type="button"
+          id="buttonRock"
+          class="play__rock play__button"
+          value="Rock"
+          onclick="onclickRock()"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
             <path
               fill="#3B4262"
@@ -60,6 +72,9 @@
           </svg>
         </button>
       </main>
+      <section class="result">
+        <p id="result__text"></p>
+      </section>
       <section class="rules">
         <button class="rules__button">Rules</button>
       </section>
