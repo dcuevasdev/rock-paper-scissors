@@ -29,7 +29,7 @@
         </div>
       </header>
       <main class="play">
-        <button class="play__paper play__button">
+        <button type="button" class="play__paper play__button" value="Paper">
           <svg xmlns="http://www.w3.org/2000/svg" width="49" height="59">
             <path
               fill="#3B4262"
@@ -37,7 +37,13 @@
             />
           </svg>
         </button>
-        <button class="play__scissors play__button">
+        <button
+          type="button"
+          id="buttonScissors"
+          class="play__scissors play__button"
+          value="Scissors"
+          onclick="onclickScissors()"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" width="51" height="58">
             <path
               fill="#3B4262"
@@ -45,7 +51,7 @@
             />
           </svg>
         </button>
-        <button class="play__rock play__button">
+        <button type="button" class="play__rock play__button" value="Rock">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
             <path
               fill="#3B4262"
